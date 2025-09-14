@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://zanzan.idv.tw/sitemap-index.xml
