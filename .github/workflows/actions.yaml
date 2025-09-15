@@ -19,13 +19,10 @@ jobs:
         uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
-
-      - name: Build step
-        run: "deno task build"
-
+          
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: ""
+          project: "blog-deploy"
           entrypoint: "dist/main.ts"
           root: "."
