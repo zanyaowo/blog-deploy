@@ -14,7 +14,7 @@ serve(async (req) => {
       file.close(); // Close the file handle immediately
       if (stat.isFile) {
         return serveDir(req, {
-          fsRoot: ".",
+          fsRoot: "./dist",
           urlRoot: "",
         });
       }
